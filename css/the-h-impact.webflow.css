@@ -1,3 +1,22 @@
+:root {
+  --untitled-ui-primary700: #6941c6;
+  --walsh-black: #2c2c2c;
+  --untitled-ui-primary600: #7f56d9;
+  --untitled-ui-white: white;
+  --untitled-ui-primary100: #f4ebff;
+  --untitled-ui-gray600: #475467;
+  --untitled-ui-gray900: #101828;
+  --untitled-ui-gray200: #eaecf0;
+  --untitled-ui-primary200: #e9d7fe;
+  --flowui-component-library-gray-900: #160042;
+  --walsh-walsh-mid-gray: #ddd;
+  --walsh-walsh-mid-green: #47888a;
+  --walsh-walsh-dark-green: #2c5c5d;
+  --walsh-walsh-light-green: #c2ecd5;
+  --walsh-walsh-dark-green-2: #204f58;
+  --flowui-component-library-gray-500: #6b7094;
+}
+
 .w-layout-grid {
   grid-row-gap: 16px;
   grid-column-gap: 16px;
@@ -101,9 +120,9 @@
 }
 
 .walsh-link-block-orange-2 {
+  background-color: var(--untitled-ui-primary700);
   color: #fff;
   text-align: center;
-  background-color: #6941c6;
   border-radius: 100px;
   justify-content: center;
   align-self: stretch;
@@ -134,7 +153,7 @@
 }
 
 .walsh-heading-large {
-  color: #2c2c2c;
+  color: var(--walsh-black);
   letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 0;
@@ -145,7 +164,7 @@
 }
 
 .walsh-title-tag {
-  color: #2c2c2c;
+  color: var(--walsh-black);
   font-size: 1.2em;
   font-weight: 500;
 }
@@ -233,11 +252,11 @@
 
 .uui-button {
   grid-column-gap: .5rem;
-  color: #fff;
+  border: 1px solid var(--untitled-ui-primary600);
+  background-color: var(--untitled-ui-primary600);
+  color: var(--untitled-ui-white);
   text-align: center;
   white-space: nowrap;
-  background-color: #7f56d9;
-  border: 1px solid #7f56d9;
   border-radius: .5rem;
   justify-content: center;
   align-items: center;
@@ -253,17 +272,17 @@
 }
 
 .uui-button:hover {
-  background-color: #6941c6;
-  border-color: #6941c6;
+  border-color: var(--untitled-ui-primary700);
+  background-color: var(--untitled-ui-primary700);
 }
 
 .uui-button:focus {
-  background-color: #7f56d9;
-  box-shadow: 0 1px 2px rgba(16, 24, 40, .05), 0 0 0 4px #f4ebff;
+  background-color: var(--untitled-ui-primary600);
+  box-shadow: 0 1px 2px 0 rgba(16, 24, 40, .05), 0 0 0 4px var(--untitled-ui-primary100);
 }
 
 .uui-text-size-medium {
-  color: #475467;
+  color: var(--untitled-ui-gray600);
   letter-spacing: normal;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
   font-size: 1rem;
@@ -297,7 +316,7 @@
 }
 
 .uui-pricing04_price-text {
-  color: #475467;
+  color: var(--untitled-ui-gray600);
   letter-spacing: normal;
   margin-left: .25rem;
   font-size: 1rem;
@@ -306,7 +325,7 @@
 }
 
 .uui-pricing04_price {
-  color: #101828;
+  color: var(--untitled-ui-gray900);
   margin-top: .5rem;
   margin-bottom: .5rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
@@ -316,7 +335,7 @@
 }
 
 .uui-heading-xxsmall {
-  color: #101828;
+  color: var(--untitled-ui-gray900);
   letter-spacing: normal;
   margin-top: 0;
   margin-bottom: 0;
@@ -338,7 +357,7 @@
 }
 
 .uui-pricing04_plan {
-  border: 1px solid #eaecf0;
+  border: 1px solid var(--untitled-ui-gray200);
   border-radius: 1rem;
   flex-direction: column;
   justify-content: flex-end;
@@ -352,12 +371,14 @@
   z-index: 1;
   width: 100%;
   height: 2.5rem;
+  background-color: var(--untitled-ui-primary700);
+  outline-color: var(--untitled-ui-primary200);
   outline-offset: 0px;
-  color: #fff;
-  background-color: #6941c6;
+  color: var(--untitled-ui-white);
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
-  outline: 1px solid #e9d7fe;
+  outline-width: 1px;
+  outline-style: solid;
   justify-content: center;
   align-items: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
@@ -371,7 +392,7 @@
 }
 
 .uui-pricing04_popular-plan {
-  border: 1px solid #eaecf0;
+  border: 1px solid var(--untitled-ui-gray200);
   border-radius: 1rem;
   padding: 4.5rem 2rem 2rem;
   position: relative;
@@ -388,7 +409,7 @@
 }
 
 .uui-heading-medium {
-  color: #101828;
+  color: var(--untitled-ui-gray900);
   margin-top: 0;
   margin-bottom: 0;
   font-family: Sinkinsans, sans-serif;
@@ -398,7 +419,7 @@
 }
 
 .uui-heading-subheading {
-  color: #7f56d9;
+  color: var(--untitled-ui-primary600);
   margin-bottom: .75rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, Oxygen, Fira Sans, Droid Sans, sans-serif;
   font-size: 1rem;
@@ -445,9 +466,9 @@
 }
 
 .walsh-link-block-orange-3 {
+  background-color: var(--untitled-ui-primary700);
   color: #fff;
   text-align: center;
-  background-color: #6941c6;
   border-radius: 100px;
   justify-content: center;
   align-self: stretch;
@@ -570,7 +591,7 @@
 }
 
 .f-h3-heading {
-  color: #160042;
+  color: var(--flowui-component-library-gray-900);
   letter-spacing: -.02em;
   margin-top: 0;
   margin-bottom: 0;
@@ -738,7 +759,7 @@
   }
 
   .walsh-title-tag {
-    color: #6941c6;
+    color: var(--untitled-ui-primary700);
   }
 
   .walsh-content-wrap {
@@ -791,7 +812,7 @@
   }
 
   .walsh-menu-button-black-2.w--open {
-    color: #2c2c2c;
+    color: var(--walsh-black);
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -881,8 +902,8 @@
   }
 
   .uui-button:hover {
-    background-color: #7f56d9;
-    border-color: #7f56d9;
+    border-color: var(--untitled-ui-primary600);
+    background-color: var(--untitled-ui-primary600);
   }
 
   .uui-pricing04_feature-list {
@@ -987,6 +1008,10 @@
     font-size: 1em;
   }
 
+  .walsh-hero-p-wrapper {
+    max-width: 36svh;
+  }
+
   .walsh-heading-large {
     font-size: 1.5em;
   }
@@ -1011,8 +1036,8 @@
   .walsh-rounded-container {
     width: 100%;
     flex: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .walsh-container-3 {
@@ -1048,7 +1073,7 @@
 
   .heading-4 {
     width: auto;
-    font-size: 10vw;
+    font-size: 9vw;
   }
 
   .walsh-container-4 {
@@ -1110,6 +1135,11 @@
   .walsh-content-wrapper-white {
     padding-top: 3em;
     padding-bottom: 3em;
+  }
+
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
 
